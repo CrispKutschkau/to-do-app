@@ -1,12 +1,61 @@
+@font-face {
+    font-family: Abel;
+    src: url('../static/Abel/Abel-Regular.ttf');
+}
+
+html, body{
+    background-color: #fafcfd;
+}
+
+#app{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: auto;
+    height: 100vh;
+    width: 100vw;
+}
+
 #app-header{
-    position: fixed;
     width: 100%;
-    height: 50px;
-    background-color: #6F8FAF;
-    margin-top: 0;
+    padding: 24px;
+    background-color: #3A5169;
     display: flex;
 }
 
+#app-footer{
+    width: 100%;
+    padding: 16px;
+    font-size: small;
+    font-family: Abel;
+    display: flex;
+    justify-content: center;
+    color: #B0B5BB
+}
+
+a {
+    color: inherit;
+}
+
 #app-title{
-    color: #FFFFFF
+    color: #f2f5f8;
+    font-size: x-large;
+    margin-left: 16px;
+    font-family: Abel;
+}
+
+#app-body{
+    font-family: Abel;
+    color: #1E2023;
+    display: flex;
+    flex: 1;
+    overflow: auto;
+    padding: 32px;
+}
+
+#list-box{
+    overflow: auto;
+    height: 200px;
+    width: 100%;
+    box-shadow: 2px 2px 6px #717171;
 }
