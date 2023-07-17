@@ -40,7 +40,7 @@ a {
 #app-title{
     color: #f2f5f8;
     font-size: x-large;
-    margin-left: 16px;
+    margin-left: 8px;
     font-family: Abel;
 }
 
@@ -50,12 +50,67 @@ a {
     display: flex;
     flex: 1;
     overflow: auto;
-    padding: 32px;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
 }
 
-#list-box{
+.container-box{
     overflow: auto;
-    height: 200px;
-    width: 100%;
+    height: 225px;
+    width: 97%;
     box-shadow: 2px 2px 6px #717171;
+    margin-left: 8px;
+    margin-right: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 16px 16px 16px;
+}
+
+.container-box-title{
+    font-size: x-large;
+    border-bottom: 1px #717171 solid;
+    padding-bottom: 16px;
+}
+
+#new-task-form{
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#task-input-box{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #717171;
+    margin-left: 16px;
+    margin-right: 16px;
+    background: none;
+    font-size: large;
+    font-family: Abel;
+}
+
+#task-submit-btn{
+    width: 80px;
+    height: 40px;
+    margin-left: auto;
+    font-family: Abel;
+    padding: 0px;
+    border: none;
+    background: none;
+    font-size: x-large;
+    font-weight: bold;
+    margin-right: 8px;
+    color: #3A5169;
+}
+
+#task-list-body{
+    margin-top: 16px;
+    margin-left: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
 }
